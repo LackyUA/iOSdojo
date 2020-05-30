@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6F17414B61C298F68F96116 /* Pods_KatasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D25F0305B1EAA8C53FF1E24 /* Pods_KatasTests.framework */; };
+		AFE47DF3248280E700D53B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF2248280E700D53B46 /* AppDelegate.swift */; };
+		AFE47DF5248280E700D53B46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF4248280E700D53B46 /* SceneDelegate.swift */; };
+		AFE47DF7248280E700D53B46 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF6248280E700D53B46 /* MainViewController.swift */; };
+		AFE47DFA248280E700D53B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE47DF8248280E700D53B46 /* Main.storyboard */; };
+		AFE47DFC248280ED00D53B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE47DFB248280ED00D53B46 /* Assets.xcassets */; };
+		AFE47DFF248280ED00D53B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE47DFD248280ED00D53B46 /* LaunchScreen.storyboard */; };
+		AFE47E0A248280ED00D53B46 /* KatasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E09248280ED00D53B46 /* KatasTests.swift */; };
+		AFE47E15248280ED00D53B46 /* KatasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E14248280ED00D53B46 /* KatasUITests.swift */; };
+		AFE47E282482845A00D53B46 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E272482845A00D53B46 /* Coordinator.swift */; };
+		AFE47E2A248284F100D53B46 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E29248284F100D53B46 /* AppCoordinator.swift */; };
+		AFE47E2C248288FE00D53B46 /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E2B248288FE00D53B46 /* MainScreenCoordinator.swift */; };
+		AFE47E2E24828F6500D53B46 /* KataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E2D24828F6500D53B46 /* KataType.swift */; };
+		AFE47E332482902600D53B46 /* KataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E312482902600D53B46 /* KataCell.swift */; };
+		AFE47E342482902600D53B46 /* KataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE47E322482902600D53B46 /* KataCell.xib */; };
+		AFEE11842482993700E8920F /* Kata4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE11832482993700E8920F /* Kata4.swift */; };
+		EE3F0AC22696CE28F679A948 /* Pods_Katas_KatasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC2CF2902E0C55337FFCF67 /* Pods_Katas_KatasUITests.framework */; };
+		FA87E2488B633E03DD351C9F /* Pods_Katas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A627B08C6F3333536B424C /* Pods_Katas.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFE47E06248280ED00D53B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE47DE7248280E700D53B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE47DEE248280E700D53B46;
+			remoteInfo = Katas;
+		};
+		AFE47E11248280ED00D53B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE47DE7248280E700D53B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE47DEE248280E700D53B46;
+			remoteInfo = Katas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1092DC5A45BE5CE67AD19A94 /* Pods-KatasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatasTests.release.xcconfig"; path = "Target Support Files/Pods-KatasTests/Pods-KatasTests.release.xcconfig"; sourceTree = "<group>"; };
+		2EEB6A71B8A436A76D54B5D5 /* Pods-Katas-KatasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katas-KatasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Katas-KatasUITests/Pods-Katas-KatasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC2CF2902E0C55337FFCF67 /* Pods_Katas_KatasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katas_KatasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D25F0305B1EAA8C53FF1E24 /* Pods_KatasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A627B08C6F3333536B424C /* Pods_Katas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47DEF248280E700D53B46 /* Katas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Katas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47DF2248280E700D53B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFE47DF4248280E700D53B46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFE47DF6248280E700D53B46 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AFE47DF9248280E700D53B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFE47DFB248280ED00D53B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFE47DFE248280ED00D53B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFE47E00248280ED00D53B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE47E05248280ED00D53B46 /* KatasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47E09248280ED00D53B46 /* KatasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatasTests.swift; sourceTree = "<group>"; };
+		AFE47E0B248280ED00D53B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE47E10248280ED00D53B46 /* KatasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47E14248280ED00D53B46 /* KatasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatasUITests.swift; sourceTree = "<group>"; };
+		AFE47E16248280ED00D53B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE47E272482845A00D53B46 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AFE47E29248284F100D53B46 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AFE47E2B248288FE00D53B46 /* MainScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinator.swift; sourceTree = "<group>"; };
+		AFE47E2D24828F6500D53B46 /* KataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataType.swift; sourceTree = "<group>"; };
+		AFE47E312482902600D53B46 /* KataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataCell.swift; sourceTree = "<group>"; };
+		AFE47E322482902600D53B46 /* KataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KataCell.xib; sourceTree = "<group>"; };
+		AFEE11832482993700E8920F /* Kata4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata4.swift; sourceTree = "<group>"; };
+		B0B98FA552033FDAA108A955 /* Pods-Katas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katas.debug.xcconfig"; path = "Target Support Files/Pods-Katas/Pods-Katas.debug.xcconfig"; sourceTree = "<group>"; };
+		B6521C90EAD80B5F132CE173 /* Pods-KatasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatasTests.debug.xcconfig"; path = "Target Support Files/Pods-KatasTests/Pods-KatasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C241FC2C6385181A8446A6E6 /* Pods-Katas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katas.release.xcconfig"; path = "Target Support Files/Pods-Katas/Pods-Katas.release.xcconfig"; sourceTree = "<group>"; };
+		F415BFFC7DEB7D29C8CE5E1B /* Pods-Katas-KatasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katas-KatasUITests.release.xcconfig"; path = "Target Support Files/Pods-Katas-KatasUITests/Pods-Katas-KatasUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFE47DEC248280E700D53B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA87E2488B633E03DD351C9F /* Pods_Katas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE47E02248280ED00D53B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F17414B61C298F68F96116 /* Pods_KatasTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE47E0D248280ED00D53B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3F0AC22696CE28F679A948 /* Pods_Katas_KatasUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DFB0BFFD9C62A3A1A4687B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72A627B08C6F3333536B424C /* Pods_Katas.framework */,
+				5AC2CF2902E0C55337FFCF67 /* Pods_Katas_KatasUITests.framework */,
+				5D25F0305B1EAA8C53FF1E24 /* Pods_KatasTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		792ADAB855A4182D37CEB993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0B98FA552033FDAA108A955 /* Pods-Katas.debug.xcconfig */,
+				C241FC2C6385181A8446A6E6 /* Pods-Katas.release.xcconfig */,
+				2EEB6A71B8A436A76D54B5D5 /* Pods-Katas-KatasUITests.debug.xcconfig */,
+				F415BFFC7DEB7D29C8CE5E1B /* Pods-Katas-KatasUITests.release.xcconfig */,
+				B6521C90EAD80B5F132CE173 /* Pods-KatasTests.debug.xcconfig */,
+				1092DC5A45BE5CE67AD19A94 /* Pods-KatasTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFE47DE6248280E700D53B46 = {
+			isa = PBXGroup;
+			children = (
+				AFE47DF1248280E700D53B46 /* Katas */,
+				AFE47E08248280ED00D53B46 /* KatasTests */,
+				AFE47E13248280ED00D53B46 /* KatasUITests */,
+				AFE47DF0248280E700D53B46 /* Products */,
+				792ADAB855A4182D37CEB993 /* Pods */,
+				6DFB0BFFD9C62A3A1A4687B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFE47DF0248280E700D53B46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47DEF248280E700D53B46 /* Katas.app */,
+				AFE47E05248280ED00D53B46 /* KatasTests.xctest */,
+				AFE47E10248280ED00D53B46 /* KatasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE47DF1248280E700D53B46 /* Katas */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47E23248281B800D53B46 /* Application */,
+				AFE47E25248282C100D53B46 /* Resources */,
+				AFE47E262482844800D53B46 /* Coordinator */,
+				AFE47E24248282A700D53B46 /* MainScreen */,
+				AFEE11822482991800E8920F /* Kata4 */,
+			);
+			path = Katas;
+			sourceTree = "<group>";
+		};
+		AFE47E08248280ED00D53B46 /* KatasTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47E09248280ED00D53B46 /* KatasTests.swift */,
+				AFE47E0B248280ED00D53B46 /* Info.plist */,
+			);
+			path = KatasTests;
+			sourceTree = "<group>";
+		};
+		AFE47E13248280ED00D53B46 /* KatasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47E14248280ED00D53B46 /* KatasUITests.swift */,
+				AFE47E16248280ED00D53B46 /* Info.plist */,
+			);
+			path = KatasUITests;
+			sourceTree = "<group>";
+		};
+		AFE47E23248281B800D53B46 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47DF2248280E700D53B46 /* AppDelegate.swift */,
+				AFE47DF4248280E700D53B46 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AFE47E24248282A700D53B46 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47E2B248288FE00D53B46 /* MainScreenCoordinator.swift */,
+				AFE47E2D24828F6500D53B46 /* KataType.swift */,
+				AFE47DF6248280E700D53B46 /* MainViewController.swift */,
+				AFE47DF8248280E700D53B46 /* Main.storyboard */,
+				AFE47E3024828FF700D53B46 /* KataCell */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		AFE47E25248282C100D53B46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47DFB248280ED00D53B46 /* Assets.xcassets */,
+				AFE47DFD248280ED00D53B46 /* LaunchScreen.storyboard */,
+				AFE47E00248280ED00D53B46 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFE47E262482844800D53B46 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47E29248284F100D53B46 /* AppCoordinator.swift */,
+				AFE47E272482845A00D53B46 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AFE47E3024828FF700D53B46 /* KataCell */ = {
+			isa = PBXGroup;
+			children = (
+				AFE47E312482902600D53B46 /* KataCell.swift */,
+				AFE47E322482902600D53B46 /* KataCell.xib */,
+			);
+			path = KataCell;
+			sourceTree = "<group>";
+		};
+		AFEE11822482991800E8920F /* Kata4 */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE11832482993700E8920F /* Kata4.swift */,
+			);
+			path = Kata4;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFE47DEE248280E700D53B46 /* Katas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE47E19248280ED00D53B46 /* Build configuration list for PBXNativeTarget "Katas" */;
+			buildPhases = (
+				04CB91245F3730B3C4B8E113 /* [CP] Check Pods Manifest.lock */,
+				AFE47DEB248280E700D53B46 /* Sources */,
+				AFE47DEC248280E700D53B46 /* Frameworks */,
+				AFE47DED248280E700D53B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Katas;
+			productName = Katas;
+			productReference = AFE47DEF248280E700D53B46 /* Katas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFE47E04248280ED00D53B46 /* KatasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE47E1C248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasTests" */;
+			buildPhases = (
+				B782BFEA2C63D95CA202CE3B /* [CP] Check Pods Manifest.lock */,
+				AFE47E01248280ED00D53B46 /* Sources */,
+				AFE47E02248280ED00D53B46 /* Frameworks */,
+				AFE47E03248280ED00D53B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE47E07248280ED00D53B46 /* PBXTargetDependency */,
+			);
+			name = KatasTests;
+			productName = KatasTests;
+			productReference = AFE47E05248280ED00D53B46 /* KatasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFE47E0F248280ED00D53B46 /* KatasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE47E1F248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasUITests" */;
+			buildPhases = (
+				18350AC4E1FC0DCB7A39027B /* [CP] Check Pods Manifest.lock */,
+				AFE47E0C248280ED00D53B46 /* Sources */,
+				AFE47E0D248280ED00D53B46 /* Frameworks */,
+				AFE47E0E248280ED00D53B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE47E12248280ED00D53B46 /* PBXTargetDependency */,
+			);
+			name = KatasUITests;
+			productName = KatasUITests;
+			productReference = AFE47E10248280ED00D53B46 /* KatasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFE47DE7248280E700D53B46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "iOS Dojo";
+				TargetAttributes = {
+					AFE47DEE248280E700D53B46 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					AFE47E04248280ED00D53B46 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AFE47DEE248280E700D53B46;
+					};
+					AFE47E0F248280ED00D53B46 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AFE47DEE248280E700D53B46;
+					};
+				};
+			};
+			buildConfigurationList = AFE47DEA248280E700D53B46 /* Build configuration list for PBXProject "Dojo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFE47DE6248280E700D53B46;
+			productRefGroup = AFE47DF0248280E700D53B46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFE47DEE248280E700D53B46 /* Katas */,
+				AFE47E04248280ED00D53B46 /* KatasTests */,
+				AFE47E0F248280ED00D53B46 /* KatasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFE47DED248280E700D53B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE47DFF248280ED00D53B46 /* LaunchScreen.storyboard in Resources */,
+				AFE47DFC248280ED00D53B46 /* Assets.xcassets in Resources */,
+				AFE47E342482902600D53B46 /* KataCell.xib in Resources */,
+				AFE47DFA248280E700D53B46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE47E03248280ED00D53B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE47E0E248280ED00D53B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04CB91245F3730B3C4B8E113 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Katas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18350AC4E1FC0DCB7A39027B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Katas-KatasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B782BFEA2C63D95CA202CE3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KatasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFE47DEB248280E700D53B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEE11842482993700E8920F /* Kata4.swift in Sources */,
+				AFE47E282482845A00D53B46 /* Coordinator.swift in Sources */,
+				AFE47DF7248280E700D53B46 /* MainViewController.swift in Sources */,
+				AFE47E332482902600D53B46 /* KataCell.swift in Sources */,
+				AFE47E2E24828F6500D53B46 /* KataType.swift in Sources */,
+				AFE47DF3248280E700D53B46 /* AppDelegate.swift in Sources */,
+				AFE47E2C248288FE00D53B46 /* MainScreenCoordinator.swift in Sources */,
+				AFE47E2A248284F100D53B46 /* AppCoordinator.swift in Sources */,
+				AFE47DF5248280E700D53B46 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE47E01248280ED00D53B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE47E0A248280ED00D53B46 /* KatasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE47E0C248280ED00D53B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE47E15248280ED00D53B46 /* KatasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFE47E07248280ED00D53B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE47DEE248280E700D53B46 /* Katas */;
+			targetProxy = AFE47E06248280ED00D53B46 /* PBXContainerItemProxy */;
+		};
+		AFE47E12248280ED00D53B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE47DEE248280E700D53B46 /* Katas */;
+			targetProxy = AFE47E11248280ED00D53B46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFE47DF8248280E700D53B46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE47DF9248280E700D53B46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFE47DFD248280ED00D53B46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE47DFE248280ED00D53B46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFE47E17248280ED00D53B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFE47E18248280ED00D53B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFE47E1A248280ED00D53B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B98FA552033FDAA108A955 /* Pods-Katas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3B3DK2J6U;
+				INFOPLIST_FILE = Katas/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.Katas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFE47E1B248280ED00D53B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C241FC2C6385181A8446A6E6 /* Pods-Katas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3B3DK2J6U;
+				INFOPLIST_FILE = Katas/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.Katas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFE47E1D248280ED00D53B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6521C90EAD80B5F132CE173 /* Pods-KatasTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3B3DK2J6U;
+				INFOPLIST_FILE = KatasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.KatasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Katas.app/Katas";
+			};
+			name = Debug;
+		};
+		AFE47E1E248280ED00D53B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1092DC5A45BE5CE67AD19A94 /* Pods-KatasTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3B3DK2J6U;
+				INFOPLIST_FILE = KatasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.KatasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Katas.app/Katas";
+			};
+			name = Release;
+		};
+		AFE47E20248280ED00D53B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EEB6A71B8A436A76D54B5D5 /* Pods-Katas-KatasUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3B3DK2J6U;
+				INFOPLIST_FILE = KatasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.KatasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Katas;
+			};
+			name = Debug;
+		};
+		AFE47E21248280ED00D53B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F415BFFC7DEB7D29C8CE5E1B /* Pods-Katas-KatasUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3B3DK2J6U;
+				INFOPLIST_FILE = KatasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.KatasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Katas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFE47DEA248280E700D53B46 /* Build configuration list for PBXProject "Dojo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE47E17248280ED00D53B46 /* Debug */,
+				AFE47E18248280ED00D53B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE47E19248280ED00D53B46 /* Build configuration list for PBXNativeTarget "Katas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE47E1A248280ED00D53B46 /* Debug */,
+				AFE47E1B248280ED00D53B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE47E1C248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE47E1D248280ED00D53B46 /* Debug */,
+				AFE47E1E248280ED00D53B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE47E1F248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE47E20248280ED00D53B46 /* Debug */,
+				AFE47E21248280ED00D53B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFE47DE7248280E700D53B46 /* Project object */;
+}
