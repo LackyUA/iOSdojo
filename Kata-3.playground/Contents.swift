@@ -1,6 +1,6 @@
 
 // Kata:
-// Make async image loader form url "https://shorturl.at/bik24".
+// Make async image loader form url "http://i.imgur.com/w5rkSIj.jpg".
 
 import UIKit
 import PlaygroundSupport
