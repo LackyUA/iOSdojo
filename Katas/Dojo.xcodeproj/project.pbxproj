@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A6F17414B61C298F68F96116 /* Pods_KatasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D25F0305B1EAA8C53FF1E24 /* Pods_KatasTests.framework */; };
+		AF8437B224829F1700239365 /* Kata3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8437B124829F1700239365 /* Kata3.swift */; };
+		AF8437B52482A06700239365 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8437B42482A06700239365 /* AlertHelper.swift */; };
 		AFE47DF3248280E700D53B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF2248280E700D53B46 /* AppDelegate.swift */; };
 		AFE47DF5248280E700D53B46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF4248280E700D53B46 /* SceneDelegate.swift */; };
 		AFE47DF7248280E700D53B46 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF6248280E700D53B46 /* MainViewController.swift */; };
@@ -50,6 +52,8 @@
 		5AC2CF2902E0C55337FFCF67 /* Pods_Katas_KatasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katas_KatasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D25F0305B1EAA8C53FF1E24 /* Pods_KatasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A627B08C6F3333536B424C /* Pods_Katas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8437B124829F1700239365 /* Kata3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata3.swift; sourceTree = "<group>"; };
+		AF8437B42482A06700239365 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		AFE47DEF248280E700D53B46 /* Dojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE47DF2248280E700D53B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE47DF4248280E700D53B46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF8437AF24829EF100239365 /* Kata1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kata1;
+			sourceTree = "<group>";
+		};
+		AF8437B024829EFB00239365 /* Kata3 */ = {
+			isa = PBXGroup;
+			children = (
+				AF8437B124829F1700239365 /* Kata3.swift */,
+			);
+			path = Kata3;
+			sourceTree = "<group>";
+		};
+		AF8437B32482A05500239365 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF8437B42482A06700239365 /* AlertHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		AFE47DE6248280E700D53B46 = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +182,11 @@
 			children = (
 				AFE47E23248281B800D53B46 /* Application */,
 				AFE47E25248282C100D53B46 /* Resources */,
+				AF8437B32482A05500239365 /* Helpers */,
 				AFE47E262482844800D53B46 /* Coordinator */,
 				AFE47E24248282A700D53B46 /* MainScreen */,
+				AF8437AF24829EF100239365 /* Kata1 */,
+				AF8437B024829EFB00239365 /* Kata3 */,
 				AFEE11822482991800E8920F /* Kata4 */,
 			);
 			path = Dojo;
@@ -442,7 +472,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFEE11842482993700E8920F /* Kata4.swift in Sources */,
+				AF8437B52482A06700239365 /* AlertHelper.swift in Sources */,
 				AFE47E282482845A00D53B46 /* Coordinator.swift in Sources */,
+				AF8437B224829F1700239365 /* Kata3.swift in Sources */,
 				AFE47DF7248280E700D53B46 /* MainViewController.swift in Sources */,
 				AFE47E332482902600D53B46 /* KataCell.swift in Sources */,
 				AFE47E2E24828F6500D53B46 /* KataType.swift in Sources */,

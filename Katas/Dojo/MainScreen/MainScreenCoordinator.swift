@@ -10,6 +10,7 @@ import UIKit
 
 protocol MainCoordinator: class {
     func showKata(atIndex index: Int)
+    func popLastViewController()
 }
 
 final class MainScreenCoordinator: NSObject, Coordinator {
@@ -67,13 +68,21 @@ extension MainScreenCoordinator: MainCoordinator {
             break
             
         case .kata3:
-            break
+            let viewController = Kata3()
+            viewController.coordinator = self
+            viewController.navBarTitle = kata.title
+            rootNavigationController.pushViewController(viewController, animated: true)
             
         case .kata4:
             let viewController = Kata4()
+            viewController.coordinator = self
             viewController.navBarTitle = kata.title
             rootNavigationController.pushViewController(viewController, animated: true)
         }
+    }
+    
+    func popLastViewController() {
+        rootNavigationController.popViewController(animated: true)
     }
     
 }
