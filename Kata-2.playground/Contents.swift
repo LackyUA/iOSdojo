@@ -1,7 +1,8 @@
-import Foundation
 
 // Kata:
 // Format current date into "year.month.day - X quarter" string.
+
+import Foundation
 
 let formatter = DateFormatter()
 

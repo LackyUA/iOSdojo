@@ -1,7 +1,8 @@
-import Foundation
 
 // Kata:
 // Format string "Saturday, 30 May 2020, 1:13:13 PM" to date.
+
+import Foundation
 
 let stringDate = "Saturday, 30 May 2020, 1:13:13 PM"
 let formatter = DateFormatter()
