@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Katas.xcodeproj">
+      location = "group:/Users/lackyua/Documents/&#x414;&#x43e;&#x43a;&#x443;&#x43c;&#x435;&#x43d;&#x442;&#x44b; &#x2014; mac&#x2019;s MacBook Pro/My Projects/Dojo/Katas/Dojo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -50,7 +50,7 @@
 		5AC2CF2902E0C55337FFCF67 /* Pods_Katas_KatasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katas_KatasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D25F0305B1EAA8C53FF1E24 /* Pods_KatasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A627B08C6F3333536B424C /* Pods_Katas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE47DEF248280E700D53B46 /* Katas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Katas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47DEF248280E700D53B46 /* Dojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE47DF2248280E700D53B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE47DF4248280E700D53B46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFE47DF6248280E700D53B46 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,10 +58,10 @@
 		AFE47DFB248280ED00D53B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFE47DFE248280ED00D53B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE47E00248280ED00D53B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFE47E05248280ED00D53B46 /* KatasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47E05248280ED00D53B46 /* DojoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DojoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE47E09248280ED00D53B46 /* KatasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatasTests.swift; sourceTree = "<group>"; };
 		AFE47E0B248280ED00D53B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFE47E10248280ED00D53B46 /* KatasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE47E10248280ED00D53B46 /* DojoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DojoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE47E14248280ED00D53B46 /* KatasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatasUITests.swift; sourceTree = "<group>"; };
 		AFE47E16248280ED00D53B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE47E272482845A00D53B46 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 		AFE47DE6248280E700D53B46 = {
 			isa = PBXGroup;
 			children = (
-				AFE47DF1248280E700D53B46 /* Katas */,
-				AFE47E08248280ED00D53B46 /* KatasTests */,
-				AFE47E13248280ED00D53B46 /* KatasUITests */,
+				AFE47DF1248280E700D53B46 /* Dojo */,
+				AFE47E08248280ED00D53B46 /* DojoTests */,
+				AFE47E13248280ED00D53B46 /* DojoUITests */,
 				AFE47DF0248280E700D53B46 /* Products */,
 				792ADAB855A4182D37CEB993 /* Pods */,
 				6DFB0BFFD9C62A3A1A4687B3 /* Frameworks */,
@@ -143,14 +143,14 @@
 		AFE47DF0248280E700D53B46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFE47DEF248280E700D53B46 /* Katas.app */,
-				AFE47E05248280ED00D53B46 /* KatasTests.xctest */,
-				AFE47E10248280ED00D53B46 /* KatasUITests.xctest */,
+				AFE47DEF248280E700D53B46 /* Dojo.app */,
+				AFE47E05248280ED00D53B46 /* DojoTests.xctest */,
+				AFE47E10248280ED00D53B46 /* DojoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFE47DF1248280E700D53B46 /* Katas */ = {
+		AFE47DF1248280E700D53B46 /* Dojo */ = {
 			isa = PBXGroup;
 			children = (
 				AFE47E23248281B800D53B46 /* Application */,
@@ -159,25 +159,25 @@
 				AFE47E24248282A700D53B46 /* MainScreen */,
 				AFEE11822482991800E8920F /* Kata4 */,
 			);
-			path = Katas;
+			path = Dojo;
 			sourceTree = "<group>";
 		};
-		AFE47E08248280ED00D53B46 /* KatasTests */ = {
+		AFE47E08248280ED00D53B46 /* DojoTests */ = {
 			isa = PBXGroup;
 			children = (
 				AFE47E09248280ED00D53B46 /* KatasTests.swift */,
 				AFE47E0B248280ED00D53B46 /* Info.plist */,
 			);
-			path = KatasTests;
+			path = DojoTests;
 			sourceTree = "<group>";
 		};
-		AFE47E13248280ED00D53B46 /* KatasUITests */ = {
+		AFE47E13248280ED00D53B46 /* DojoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				AFE47E14248280ED00D53B46 /* KatasUITests.swift */,
 				AFE47E16248280ED00D53B46 /* Info.plist */,
 			);
-			path = KatasUITests;
+			path = DojoUITests;
 			sourceTree = "<group>";
 		};
 		AFE47E23248281B800D53B46 /* Application */ = {
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFE47DEE248280E700D53B46 /* Katas */ = {
+		AFE47DEE248280E700D53B46 /* Dojo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFE47E19248280ED00D53B46 /* Build configuration list for PBXNativeTarget "Katas" */;
+			buildConfigurationList = AFE47E19248280ED00D53B46 /* Build configuration list for PBXNativeTarget "Dojo" */;
 			buildPhases = (
 				04CB91245F3730B3C4B8E113 /* [CP] Check Pods Manifest.lock */,
 				AFE47DEB248280E700D53B46 /* Sources */,
@@ -253,14 +253,14 @@
 			);
 			dependencies = (
 			);
-			name = Katas;
+			name = Dojo;
 			productName = Katas;
-			productReference = AFE47DEF248280E700D53B46 /* Katas.app */;
+			productReference = AFE47DEF248280E700D53B46 /* Dojo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AFE47E04248280ED00D53B46 /* KatasTests */ = {
+		AFE47E04248280ED00D53B46 /* DojoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFE47E1C248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasTests" */;
+			buildConfigurationList = AFE47E1C248280ED00D53B46 /* Build configuration list for PBXNativeTarget "DojoTests" */;
 			buildPhases = (
 				B782BFEA2C63D95CA202CE3B /* [CP] Check Pods Manifest.lock */,
 				AFE47E01248280ED00D53B46 /* Sources */,
@@ -272,14 +272,14 @@
 			dependencies = (
 				AFE47E07248280ED00D53B46 /* PBXTargetDependency */,
 			);
-			name = KatasTests;
+			name = DojoTests;
 			productName = KatasTests;
-			productReference = AFE47E05248280ED00D53B46 /* KatasTests.xctest */;
+			productReference = AFE47E05248280ED00D53B46 /* DojoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AFE47E0F248280ED00D53B46 /* KatasUITests */ = {
+		AFE47E0F248280ED00D53B46 /* DojoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFE47E1F248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasUITests" */;
+			buildConfigurationList = AFE47E1F248280ED00D53B46 /* Build configuration list for PBXNativeTarget "DojoUITests" */;
 			buildPhases = (
 				18350AC4E1FC0DCB7A39027B /* [CP] Check Pods Manifest.lock */,
 				AFE47E0C248280ED00D53B46 /* Sources */,
@@ -291,9 +291,9 @@
 			dependencies = (
 				AFE47E12248280ED00D53B46 /* PBXTargetDependency */,
 			);
-			name = KatasUITests;
+			name = DojoUITests;
 			productName = KatasUITests;
-			productReference = AFE47E10248280ED00D53B46 /* KatasUITests.xctest */;
+			productReference = AFE47E10248280ED00D53B46 /* DojoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -332,9 +332,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFE47DEE248280E700D53B46 /* Katas */,
-				AFE47E04248280ED00D53B46 /* KatasTests */,
-				AFE47E0F248280ED00D53B46 /* KatasUITests */,
+				AFE47DEE248280E700D53B46 /* Dojo */,
+				AFE47E04248280ED00D53B46 /* DojoTests */,
+				AFE47E0F248280ED00D53B46 /* DojoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -474,12 +474,12 @@
 /* Begin PBXTargetDependency section */
 		AFE47E07248280ED00D53B46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFE47DEE248280E700D53B46 /* Katas */;
+			target = AFE47DEE248280E700D53B46 /* Dojo */;
 			targetProxy = AFE47E06248280ED00D53B46 /* PBXContainerItemProxy */;
 		};
 		AFE47E12248280ED00D53B46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFE47DEE248280E700D53B46 /* Katas */;
+			target = AFE47DEE248280E700D53B46 /* Dojo */;
 			targetProxy = AFE47E11248280ED00D53B46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -625,13 +625,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3B3DK2J6U;
-				INFOPLIST_FILE = Katas/Resources/Info.plist;
+				INFOPLIST_FILE = Dojo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.Katas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Dojo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -644,13 +644,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3B3DK2J6U;
-				INFOPLIST_FILE = Katas/Resources/Info.plist;
+				INFOPLIST_FILE = Dojo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ios.dojo.Katas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Dojo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -675,7 +675,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Katas.app/Katas";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojo.app/Dojo";
 			};
 			name = Debug;
 		};
@@ -698,7 +698,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Katas.app/Katas";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojo.app/Dojo";
 			};
 			name = Release;
 		};
@@ -756,7 +756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFE47E19248280ED00D53B46 /* Build configuration list for PBXNativeTarget "Katas" */ = {
+		AFE47E19248280ED00D53B46 /* Build configuration list for PBXNativeTarget "Dojo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFE47E1A248280ED00D53B46 /* Debug */,
@@ -765,7 +765,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFE47E1C248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasTests" */ = {
+		AFE47E1C248280ED00D53B46 /* Build configuration list for PBXNativeTarget "DojoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFE47E1D248280ED00D53B46 /* Debug */,
@@ -774,7 +774,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFE47E1F248280ED00D53B46 /* Build configuration list for PBXNativeTarget "KatasUITests" */ = {
+		AFE47E1F248280ED00D53B46 /* Build configuration list for PBXNativeTarget "DojoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFE47E20248280ED00D53B46 /* Debug */,
