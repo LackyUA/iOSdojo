@@ -5,5 +5,5 @@ A place to train skills. 👊
 2. Format current date into "year.month.day - X quarter" string.
 3. Create stack using array as storage.
 4. Create property wrapper for Capitalizing Text.
-# List UIKit katas
+# List of UIKit katas
 1. Make async image loader form url "http://i.imgur.com/w5rkSIj.jpg".
