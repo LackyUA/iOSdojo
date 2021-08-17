@@ -1,5 +1,5 @@
 //
-//  Kata3.swift
+//  Kata1.swift
 //  Dojo
 //
 //  Created by Dmytro Dobrovolskyy on 30.05.2020.
@@ -12,7 +12,7 @@
 
 import UIKit
 
-final class Kata3: UIViewController {
+final class Kata1: UIViewController {
     
     // MARK: - Properties
     
