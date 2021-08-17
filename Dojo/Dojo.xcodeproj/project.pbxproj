@@ -10,7 +10,7 @@
 		0D94998DA2D888C861280DFB /* Pods_Dojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A7098A96AD26BE4B69B748 /* Pods_Dojo.framework */; };
 		4214AA49EF71E6C2229A3BA7 /* Pods_DojoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6358214CC3F70ED8C0560D46 /* Pods_DojoTests.framework */; };
 		84834424FC3397475E4A2ECF /* Pods_Dojo_DojoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6293E060161666A89148D47F /* Pods_Dojo_DojoUITests.framework */; };
-		AF8437B224829F1700239365 /* Kata3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8437B124829F1700239365 /* Kata3.swift */; };
+		AF8437B224829F1700239365 /* Kata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8437B124829F1700239365 /* Kata1.swift */; };
 		AF8437B52482A06700239365 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8437B42482A06700239365 /* AlertHelper.swift */; };
 		AFE47DF3248280E700D53B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF2248280E700D53B46 /* AppDelegate.swift */; };
 		AFE47DF5248280E700D53B46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47DF4248280E700D53B46 /* SceneDelegate.swift */; };
@@ -26,7 +26,7 @@
 		AFE47E2E24828F6500D53B46 /* KataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E2D24828F6500D53B46 /* KataType.swift */; };
 		AFE47E332482902600D53B46 /* KataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE47E312482902600D53B46 /* KataCell.swift */; };
 		AFE47E342482902600D53B46 /* KataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE47E322482902600D53B46 /* KataCell.xib */; };
-		AFEE11842482993700E8920F /* Kata4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE11832482993700E8920F /* Kata4.swift */; };
+		AFEE11842482993700E8920F /* Kata2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE11832482993700E8920F /* Kata2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		89D65B8D067482E44DD2CCD3 /* Pods-Dojo-DojoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dojo-DojoUITests.release.xcconfig"; path = "Target Support Files/Pods-Dojo-DojoUITests/Pods-Dojo-DojoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8B39C455F6694F4F45FD9E80 /* Pods-DojoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DojoTests.release.xcconfig"; path = "Target Support Files/Pods-DojoTests/Pods-DojoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B97F476EBAF158AC8079861 /* Pods-Dojo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dojo.release.xcconfig"; path = "Target Support Files/Pods-Dojo/Pods-Dojo.release.xcconfig"; sourceTree = "<group>"; };
-		AF8437B124829F1700239365 /* Kata3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata3.swift; sourceTree = "<group>"; };
+		AF8437B124829F1700239365 /* Kata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata1.swift; sourceTree = "<group>"; };
 		AF8437B42482A06700239365 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		AFE47DEF248280E700D53B46 /* Dojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE47DF2248280E700D53B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		AFE47E2D24828F6500D53B46 /* KataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataType.swift; sourceTree = "<group>"; };
 		AFE47E312482902600D53B46 /* KataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataCell.swift; sourceTree = "<group>"; };
 		AFE47E322482902600D53B46 /* KataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KataCell.xib; sourceTree = "<group>"; };
-		AFEE11832482993700E8920F /* Kata4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata4.swift; sourceTree = "<group>"; };
+		AFEE11832482993700E8920F /* Kata2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata2.swift; sourceTree = "<group>"; };
 		B0B98FA552033FDAA108A955 /* Pods-Katas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katas.debug.xcconfig"; path = "Target Support Files/Pods-Katas/Pods-Katas.debug.xcconfig"; sourceTree = "<group>"; };
 		B6521C90EAD80B5F132CE173 /* Pods-KatasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatasTests.debug.xcconfig"; path = "Target Support Files/Pods-KatasTests/Pods-KatasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C241FC2C6385181A8446A6E6 /* Pods-Katas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katas.release.xcconfig"; path = "Target Support Files/Pods-Katas/Pods-Katas.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,19 +144,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AF8437AF24829EF100239365 /* Kata1 */ = {
+		AF8437B024829EFB00239365 /* Kata1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF8437B124829F1700239365 /* Kata1.swift */,
 			);
 			path = Kata1;
-			sourceTree = "<group>";
-		};
-		AF8437B024829EFB00239365 /* Kata3 */ = {
-			isa = PBXGroup;
-			children = (
-				AF8437B124829F1700239365 /* Kata3.swift */,
-			);
-			path = Kata3;
 			sourceTree = "<group>";
 		};
 		AF8437B32482A05500239365 /* Helpers */ = {
@@ -197,9 +190,8 @@
 				AF8437B32482A05500239365 /* Helpers */,
 				AFE47E262482844800D53B46 /* Coordinator */,
 				AFE47E24248282A700D53B46 /* MainScreen */,
-				AF8437AF24829EF100239365 /* Kata1 */,
-				AF8437B024829EFB00239365 /* Kata3 */,
-				AFEE11822482991800E8920F /* Kata4 */,
+				AF8437B024829EFB00239365 /* Kata1 */,
+				AFEE11822482991800E8920F /* Kata2 */,
 			);
 			path = Dojo;
 			sourceTree = "<group>";
@@ -271,12 +263,12 @@
 			path = KataCell;
 			sourceTree = "<group>";
 		};
-		AFEE11822482991800E8920F /* Kata4 */ = {
+		AFEE11822482991800E8920F /* Kata2 */ = {
 			isa = PBXGroup;
 			children = (
-				AFEE11832482993700E8920F /* Kata4.swift */,
+				AFEE11832482993700E8920F /* Kata2.swift */,
 			);
-			path = Kata4;
+			path = Kata2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,10 +475,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEE11842482993700E8920F /* Kata4.swift in Sources */,
+				AFEE11842482993700E8920F /* Kata2.swift in Sources */,
 				AF8437B52482A06700239365 /* AlertHelper.swift in Sources */,
 				AFE47E282482845A00D53B46 /* Coordinator.swift in Sources */,
-				AF8437B224829F1700239365 /* Kata3.swift in Sources */,
+				AF8437B224829F1700239365 /* Kata1.swift in Sources */,
 				AFE47DF7248280E700D53B46 /* MainViewController.swift in Sources */,
 				AFE47E332482902600D53B46 /* KataCell.swift in Sources */,
 				AFE47E2E24828F6500D53B46 /* KataType.swift in Sources */,

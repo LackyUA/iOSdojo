@@ -1,63 +1,48 @@
 // Kata:
-// Create stack using array as storage.
+// Create property wrapper for Capitalizing Text.
 
 import Foundation
 
-protocol Stacking {
-    associatedtype Element
-    
-    var isEmpty: Bool { get }
-    var peak: Element? { get }
-    
-    mutating func pop() -> Element?
-    mutating func push(_ element: Element)
-}
+@propertyWrapper
+struct Capitalized {
 
-struct Stack<Element>: Stacking {
-    
     // MARK: - Properties
-    
-    private var storage: [Element]
-    
-    // MARK: - Init
-    
-    init(_ elements: [Element] = []) {
-        self.storage = elements
-    }
-    
-    // MARK: - Behaviour
-    
-    var isEmpty: Bool {
-        peak == nil
-    }
-    
-    var peak: Element? {
-        storage.last
+
+    private var value: String
+
+    // MARK: - Computed properties
+
+    var wrappedValue: String {
+        get {
+            value
+        }
+        set {
+            value = newValue.capitalized
+        }
     }
 
-    @discardableResult
-    mutating func pop() -> Element? {
-        storage.removeLast()
+    // MARK: - Lifecycle
+
+    init(wrappedValue: String) {
+        value = wrappedValue.capitalized
     }
-    
-    mutating func push(_ element: Element) {
-        storage.append(element)
-    }
-    
+
 }
 
-var namesStack = Stack<String>()
+struct Person: CustomDebugStringConvertible {
 
-print(namesStack.isEmpty ? "No values :(" : "There are some values in stack :)")
+    // MARK: - Properties
 
-namesStack.push("Dmytro")
-namesStack.push("Vlad")
-namesStack.push("Oleksii")
+    @Capitalized var name: String
+    @Capitalized var jobTitle: String
 
-print("Peak:", namesStack.peak ?? "Empty")
+    // MARK: - CustomDebugStringConvertible
 
-namesStack.pop()
-namesStack.pop()
+    var debugDescription: String {
+        "Name: \(name) \nJob title: \(jobTitle)"
+    }
 
-print("Popped:", namesStack.pop() ?? "Empty")
-print(namesStack.isEmpty ? "No values :(" : "There are some values in stack :)")
+}
+
+let person = Person(name: "jhon pobelter", jobTitle: "developer")
+print(person)
