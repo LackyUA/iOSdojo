@@ -5,3 +5,4 @@ A place to train skills. 👊
 2. Format current date into "year.month.day - X quarter" string.
 3. Make async image loader form url "http://i.imgur.com/w5rkSIj.jpg".
 4. Create stack using array as storage.
+5. Create property wrapper for Capitalizing Text.
