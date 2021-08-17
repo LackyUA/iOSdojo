@@ -1,0 +1,6 @@
+framework module Pods_DojoTests {
+  umbrella header "Pods-DojoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

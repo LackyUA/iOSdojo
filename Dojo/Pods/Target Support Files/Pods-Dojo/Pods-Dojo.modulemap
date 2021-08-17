@@ -1,0 +1,6 @@
+framework module Pods_Dojo {
+  umbrella header "Pods-Dojo-umbrella.h"
+
+  export *
+  module * { export * }
+}
