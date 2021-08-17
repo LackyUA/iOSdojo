@@ -62,22 +62,19 @@ extension MainScreenCoordinator: MainCoordinator {
         
         switch kata {
         case .kata1:
-            break
+            let viewController = Kata1()
+            viewController.coordinator = self
+            viewController.navBarTitle = kata.title
+            rootNavigationController.pushViewController(viewController, animated: true)
             
         case .kata2:
+            let viewController = Kata2()
+            viewController.coordinator = self
+            viewController.navBarTitle = kata.title
+            rootNavigationController.pushViewController(viewController, animated: true)
+
+        case .kata3, .kata4:
             break
-            
-        case .kata3:
-            let viewController = Kata3()
-            viewController.coordinator = self
-            viewController.navBarTitle = kata.title
-            rootNavigationController.pushViewController(viewController, animated: true)
-            
-        case .kata4:
-            let viewController = Kata4()
-            viewController.coordinator = self
-            viewController.navBarTitle = kata.title
-            rootNavigationController.pushViewController(viewController, animated: true)
         }
     }
     

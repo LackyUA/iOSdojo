@@ -1,5 +1,5 @@
 //
-//  Kata4.swift
+//  Kata2.swift
 //  Katas
 //
 //  Created by Dmytro Dobrovolskyy on 30.05.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class Kata4: UIViewController {
+final class Kata2: UIViewController {
     
     // MARK: - Properties
     
