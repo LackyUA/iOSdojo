@@ -7,7 +7,7 @@ protocol Stacking {
     associatedtype Element
     
     var isEmpty: Bool { get }
-    var peek: Element? { get }
+    var peak: Element? { get }
     
     mutating func pop() -> Element?
     mutating func push(_ element: Element)
@@ -28,13 +28,14 @@ struct Stack<Element>: Stacking {
     // MARK: - Behaviour
     
     var isEmpty: Bool {
-        storage.isEmpty
+        peak == nil
     }
     
-    var peek: Element? {
+    var peak: Element? {
         storage.last
     }
-    
+
+    @discardableResult
     mutating func pop() -> Element? {
         storage.removeLast()
     }
@@ -44,3 +45,19 @@ struct Stack<Element>: Stacking {
     }
     
 }
+
+var namesStack = Stack<String>()
+
+print(namesStack.isEmpty ? "No values :(" : "There are some values in stack :)")
+
+namesStack.push("Dmytro")
+namesStack.push("Vlad")
+namesStack.push("Oleksii")
+
+print("Peak:", namesStack.peak ?? "Empty")
+
+namesStack.pop()
+namesStack.pop()
+
+print("Popped:", namesStack.pop() ?? "Empty")
+print(namesStack.isEmpty ? "No values :(" : "There are some values in stack :)")
