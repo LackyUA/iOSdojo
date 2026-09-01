@@ -26,3 +26,17 @@ skill, takes 10–30 minutes, and needs no UI.
 18. Round-trip a struct through JSON: decode snake_case keys and ISO 8601 dates, encode back pretty-printed.
 19. Write a throwing parser with a custom Error enum and call it twice: with do/catch and with Result.
 20. Extract all #hashtags from a string with Swift Regex.
+21. Build a Money type: a Decimal amount plus a Currency struct over ISO codes, with + and - operators that throw a typed MoneyError.currencyMismatch. Decide what Comparable's < should do when currencies differ.
+22. Extend Money with init(amount: Int, currency:) that treats the Int as minor units (kopecks) and stores amount / 100.
+23. Write a generic clamp(value:to:) over Comparable and inverseLerp over BinaryFloatingPoint.
+24. Create your own FormatStyle that formats a rating as "4.8 ★", with a static accessor so call sites read value.formatted(.rating).
+25. Format a product count with Ukrainian pluralization — "1 товар, 2 товари, 5 товарів" — capping large values as "10 000+".
+26. Format "380671234567" as "+380 67 123 45 67": normalize the leading "+" and group the digits.
+27. Parse "2026-09-01" with Date.ParseStrategy anchored to the Europe/Kyiv time zone at noon, so the calendar day is stable in any client time zone.
+28. Format a date as a day with genitive month name — "3 вересня" — using Date.VerbatimFormatStyle.
+29. Add subscript(safe:) to Collection that returns nil instead of crashing on an out-of-bounds index.
+30. Split an array into chunks of a given size using stride.
+31. Write Sequence.ranked(by:reference:) that orders elements by a reference ranking list; unknown elements go last, keeping their original order.
+32. Make a type-safe UniqueIdentifier<Value, RawValue> phantom type, so a product ID cannot be passed where an order ID is expected, with conditional CustomStringConvertible conformance.
+33. Write concurrently(_:_:) that runs two async operations with async let and returns both results as a tuple.
+34. Wrap NSCache in a generic Cache<Key, Value> and discover why keys and values must be boxed in classes.
