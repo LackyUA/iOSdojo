@@ -1,48 +1,56 @@
 // Kata:
-// Create property wrapper for Capitalizing Text.
+// Format a past date as "2 hours ago" — once with RelativeDateTimeFormatter,
+// once with .formatted(.relative(presentation:)).
 
 import Foundation
 
-@propertyWrapper
-struct Capitalized {
+extension TimeInterval {
 
-    // MARK: - Properties
-
-    private var value: String
-
-    // MARK: - Computed properties
-
-    var wrappedValue: String {
-        get {
-            value
-        }
-        set {
-            value = newValue.capitalized
-        }
-    }
-
-    // MARK: - Lifecycle
-
-    init(wrappedValue: String) {
-        value = wrappedValue.capitalized
-    }
-
+    static let hour: TimeInterval = 60 * 60
 }
 
-struct Person: CustomDebugStringConvertible {
+// MARK: - RelativeDateTimeFormatter
 
-    // MARK: - Properties
+extension RelativeDateTimeFormatter {
 
-    @Capitalized var name: String
-    @Capitalized var jobTitle: String
-
-    // MARK: - CustomDebugStringConvertible
-
-    var debugDescription: String {
-        "Name: \(name) \nJob title: \(jobTitle)"
-    }
-
+    /// Shared instance: creating a formatter is expensive and this configuration never changes.
+    static let numeric: RelativeDateTimeFormatter = {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.unitsStyle = .full
+        formatter.dateTimeStyle = .numeric
+        return formatter
+    }()
 }
 
-let person = Person(name: "jhon pobelter", jobTitle: "developer")
-print(person)
+extension Date {
+
+    func relativeDescription(to referenceDate: Date = .now) -> String {
+        RelativeDateTimeFormatter.numeric.localizedString(for: self, relativeTo: referenceDate)
+    }
+}
+
+// MARK: - Date.RelativeFormatStyle
+
+extension Date {
+
+    /// Always relative to now: the style has no reference date to pass.
+    func relativeFormattedDescription() -> String {
+        formatted(.relative(presentation: .numeric))
+    }
+}
+
+// MARK: - Usage
+
+let twoHoursAgo = Date.now.addingTimeInterval(-2 * .hour)
+
+let formatterText = twoHoursAgo.relativeDescription()
+let formatStyleText = twoHoursAgo.relativeFormattedDescription()
+
+print(formatterText)
+print(formatStyleText)
+print("Both spellings agree:", formatterText == formatStyleText)
+
+// .named prefers words over numbers where the locale has one — "yesterday" instead of "1 day ago".
+let yesterday = Date.now.addingTimeInterval(-24 * .hour)
+
+print(yesterday.formatted(.relative(presentation: .named)))

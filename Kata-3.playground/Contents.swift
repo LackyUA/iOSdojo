@@ -1,63 +1,53 @@
 // Kata:
-// Create stack using array as storage.
+// Parse ISO 8601 string "2026-09-01T12:30:45Z" into Date and format it back —
+// once with ISO8601DateFormatter, once with Date.ISO8601FormatStyle.
 
 import Foundation
 
-protocol Stacking {
-    associatedtype Element
-    
-    var isEmpty: Bool { get }
-    var peak: Element? { get }
-    
-    mutating func pop() -> Element?
-    mutating func push(_ element: Element)
+enum ISO8601ParsingError: Error {
+    case invalidDateString(String)
 }
 
-struct Stack<Element>: Stacking {
-    
-    // MARK: - Properties
-    
-    private var storage: [Element]
-    
-    // MARK: - Init
-    
-    init(_ elements: [Element] = []) {
-        self.storage = elements
-    }
-    
-    // MARK: - Behaviour
-    
-    var isEmpty: Bool {
-        peak == nil
-    }
-    
-    var peak: Element? {
-        storage.last
-    }
+// MARK: - ISO8601DateFormatter
 
-    @discardableResult
-    mutating func pop() -> Element? {
-        storage.removeLast()
-    }
-    
-    mutating func push(_ element: Element) {
-        storage.append(element)
-    }
-    
+extension ISO8601DateFormatter {
+
+    /// Shared instance: creating a formatter is expensive and this configuration never changes.
+    static let internetDateTime: ISO8601DateFormatter = .init()
 }
 
-var namesStack = Stack<String>()
+extension Date {
 
-print(namesStack.isEmpty ? "No values :(" : "There are some values in stack :)")
+    init(internetDateTimeString value: String) throws {
+        guard let date = ISO8601DateFormatter.internetDateTime.date(from: value) else {
+            throw ISO8601ParsingError.invalidDateString(value)
+        }
+        self = date
+    }
+}
 
-namesStack.push("Dmytro")
-namesStack.push("Vlad")
-namesStack.push("Oleksii")
+// MARK: - Date.ISO8601FormatStyle
 
-print("Peak:", namesStack.peak ?? "Empty")
+extension Date {
 
-namesStack.pop()
-namesStack.pop()
+    init(iso8601String value: String) throws {
+        self = try Date(value, strategy: .iso8601)
+    }
+}
 
-print("Popped:", namesStack.pop() ?? "Empty")
-print(namesStack.isEmpty ? "No values :(" : "There are some values in stack :)")
+// MARK: - Usage
+
+let stringDate = "2026-09-01T12:30:45Z"
+
+do {
+    let formatterDate = try Date(internetDateTimeString: stringDate)
+    print(ISO8601DateFormatter.internetDateTime.string(from: formatterDate))
+
+    let formatStyleDate = try Date(iso8601String: stringDate)
+    print(formatStyleDate.formatted(.iso8601))
+
+    print("Both round trips agree:", formatterDate == formatStyleDate)
+} catch {
+    let error = ISO8601ParsingError.invalidDateString(error.localizedDescription)
+    print("Parsing failed:", error)
+}
