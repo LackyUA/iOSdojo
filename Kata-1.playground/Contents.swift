@@ -1,13 +1,26 @@
-
 // Kata:
-// Format string "Saturday, 30 May 2020, 1:13:13 PM" to date.
+// Format string "Saturday, 30 May 2020 at 1:13:13 PM" to date.
 
 import Foundation
 
-let stringDate = "Saturday, 30 May 2020, 1:13:13 PM"
-let formatter = DateFormatter()
+extension FormatStyle where Self == Date.FormatStyle {
+    static var fullDateTime: Date.FormatStyle {
+        .init(date: .complete, time: .standard, locale: Locale(identifier: "en_001"), timeZone: .gmt)
+    }
+}
 
-formatter.timeZone = TimeZone(abbreviation: "UTC")
-formatter.dateFormat = "EEEE, dd MMMM yyyy, hh:mm:ss a"
+extension Date {
+    init(fullDateTimeString value: String) throws {
+        self = try Date(value, strategy: Date.FormatStyle.fullDateTime.parseStrategy)
+    }
+}
 
-print(formatter.date(from: stringDate) ?? "")
+// MARK: - Usage
+
+let stringDate = "Saturday, 30 May 2020 at 1:13:13 PM"
+
+do {
+    print(try Date(fullDateTimeString: stringDate))
+} catch {
+    print("Parsing failed:", error)
+}

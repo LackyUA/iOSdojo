@@ -6,7 +6,7 @@ Like in karate, katas are small and repeatable: every task drills one everyday
 skill, takes 10–30 minutes, and needs no UI.
 
 ## Dates & time
-1. Format string "Saturday, 30 May 2020, 1:13:13 PM" to date.
+1. Format string "Saturday, 30 May 2020 at 1:13:13 PM" to date.
 2. Format current date into "year.month.day - X quarter" string.
 3. Parse ISO 8601 string "2026-09-01T12:30:45Z" into Date and format it back — once with ISO8601DateFormatter, once with Date.ISO8601FormatStyle.
 4. Format a past date as "2 hours ago" — once with RelativeDateTimeFormatter, once with .formatted(.relative(presentation:)).
