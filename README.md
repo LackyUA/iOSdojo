@@ -76,6 +76,7 @@ open Dojo.xcworkspace
 
 ```
 swift-dojo/
+├── Dojo.xcworkspace           # opens everything below in Xcode
 ├── README.md                  # this file
 ├── TASKS-1-foundations.md     # detailed tasks: FMT, MOD, TYP, STD
 ├── TASKS-2-generics-sequences.md  # GEN, SEQ
@@ -83,22 +84,32 @@ swift-dojo/
 ├── TASKS-4-app.md             # STA, UI, SOL, TST
 ├── TASKS-5-macros.md          # MAC
 ├── PROGRESS.md                # practice log
-├── Playgrounds/               # 5–15 min katas
-│   ├── FMT.playground
-│   ├── GEN.playground
-│   └── SEQ.playground
-├── DojoKit/                   # SwiftPM package: 30–60 min katas
+├── Playgrounds/               # 5–15 min katas: FMT-01…03, GEN-01…10, SEQ-01…05
+│   ├── FMT-01/
+│   │   ├── FMT01Practice.playground
+│   │   └── FMT01Solution.playground
+│   └── …
+├── DojoKit/                   # SwiftPM package: one module per kata
 │   ├── Sources/
-│   │   ├── DojoCore/          # SEQ, GEN, TYP, STD
+│   │   ├── DojoCore/          # SEQ, GEN, TYP, STD, MOD, SOL
 │   │   ├── DojoNetworking/    # SRV, CNC, COD
 │   │   └── DojoUI/            # UI, STA
-│   └── Tests/
-└── DojoMacros/                # separate package with a CompilerPlugin
+│   └── Tests/                 # TST
+└── DojoMacros/                # separate package with CompilerPlugins
     ├── Sources/
-    │   ├── Dojo/              # public macro declarations
-    │   └── DojoMacros/        # SwiftSyntax implementation
-    └── Tests/DojoMacrosTests/
+    │   ├── Dojo/              # public macro declarations, MAC-01…03
+    │   └── DojoMacros/        # SwiftSyntax implementations
+    └── Tests/DojoMacrosTests/ # MAC-12
 ```
+
+### Practice and Solution
+
+Every kata exists twice:
+
+- **Practice** — an empty file for your attempt. Clear it when you repeat the kata.
+- **Solution** — the reference solution to compare with after the timer.
+
+In playgrounds they are two playgrounds in the kata's folder: `Playgrounds/SEQ-01/SEQ01Practice.playground` and `SEQ01Solution.playground`. In the packages they are separate modules: `DojoKit/Sources/DojoCore/SEQ-06/Practice` builds `SEQ06Practice`, `.../SEQ-06/Solution` builds `SEQ06Solution`. Each kata compiles on its own, so a half-finished attempt never breaks another kata. When a kata builds on an earlier one (e.g. `SEQ-07` extends `SEQ-06`), add a dependency between their modules in `Package.swift`.
 
 > [!IMPORTANT]
 > **Macros don't compile in a regular `.playground`.** The [MAC](#mac) section needs a separate SwiftPM package with a `.macro` target. Create it once — all 17 katas are then done there.

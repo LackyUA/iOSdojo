@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:PROGRESS.md">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Tasks">
+      <FileRef
+         location = "group:TASKS-1-foundations.md">
+      </FileRef>
+      <FileRef
+         location = "group:TASKS-2-generics-sequences.md">
+      </FileRef>
+      <FileRef
+         location = "group:TASKS-3-services.md">
+      </FileRef>
+      <FileRef
+         location = "group:TASKS-4-app.md">
+      </FileRef>
+      <FileRef
+         location = "group:TASKS-5-macros.md">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Playgrounds"
+      name = "Playgrounds">
+      <Group
+         location = "group:FMT-01"
+         name = "FMT-01">
+         <FileRef
+            location = "group:FMT01Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:FMT01Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:FMT-02"
+         name = "FMT-02">
+         <FileRef
+            location = "group:FMT02Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:FMT02Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:FMT-03"
+         name = "FMT-03">
+         <FileRef
+            location = "group:FMT03Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:FMT03Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-01"
+         name = "GEN-01">
+         <FileRef
+            location = "group:GEN01Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN01Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-02"
+         name = "GEN-02">
+         <FileRef
+            location = "group:GEN02Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN02Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-03"
+         name = "GEN-03">
+         <FileRef
+            location = "group:GEN03Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN03Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-04"
+         name = "GEN-04">
+         <FileRef
+            location = "group:GEN04Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN04Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-05"
+         name = "GEN-05">
+         <FileRef
+            location = "group:GEN05Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN05Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-06"
+         name = "GEN-06">
+         <FileRef
+            location = "group:GEN06Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN06Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-07"
+         name = "GEN-07">
+         <FileRef
+            location = "group:GEN07Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN07Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-08"
+         name = "GEN-08">
+         <FileRef
+            location = "group:GEN08Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN08Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-09"
+         name = "GEN-09">
+         <FileRef
+            location = "group:GEN09Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN09Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:GEN-10"
+         name = "GEN-10">
+         <FileRef
+            location = "group:GEN10Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:GEN10Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SEQ-01"
+         name = "SEQ-01">
+         <FileRef
+            location = "group:SEQ01Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:SEQ01Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SEQ-02"
+         name = "SEQ-02">
+         <FileRef
+            location = "group:SEQ02Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:SEQ02Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SEQ-03"
+         name = "SEQ-03">
+         <FileRef
+            location = "group:SEQ03Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:SEQ03Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SEQ-04"
+         name = "SEQ-04">
+         <FileRef
+            location = "group:SEQ04Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:SEQ04Solution.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SEQ-05"
+         name = "SEQ-05">
+         <FileRef
+            location = "group:SEQ05Practice.playground">
+         </FileRef>
+         <FileRef
+            location = "group:SEQ05Solution.playground">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:DojoKit">
+   </FileRef>
+   <FileRef
+      location = "group:DojoMacros">
+   </FileRef>
+</Workspace>
