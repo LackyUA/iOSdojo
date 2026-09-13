@@ -106,7 +106,7 @@ swift-dojo/
 
 Every kata exists twice:
 
-- **Practice** — an empty file for your attempt. Clear it when you repeat the kata.
+- **Practice** — a file for your attempt. It starts with the full task description as comments. When you repeat the kata, clear your code below the description.
 - **Solution** — the reference solution to compare with after the timer.
 
 In playgrounds they are two playgrounds in the kata's folder: `Playgrounds/SEQ-01/SEQ01Practice.playground` and `SEQ01Solution.playground`. In the packages they are separate modules: `DojoKit/Sources/DojoCore/SEQ-06/Practice` builds `SEQ06Practice`, `.../SEQ-06/Solution` builds `SEQ06Solution`. Each kata compiles on its own, so a half-finished attempt never breaks another kata. When a kata builds on an earlier one (e.g. `SEQ-07` extends `SEQ-06`), add a dependency between their modules in `Package.swift`.
