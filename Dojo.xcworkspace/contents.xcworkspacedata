@@ -25,6 +25,9 @@
       <FileRef
          location = "group:TASKS-5-macros.md">
       </FileRef>
+      <FileRef
+         location = "group:TASKS-6-hit-testing.md">
+      </FileRef>
    </Group>
    <Group
       location = "group:Playgrounds"

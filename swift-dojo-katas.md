@@ -20,6 +20,8 @@
 | `CNC` | Concurrency, async/await, actors |
 | `STA` | State, architecture, navigation |
 | `UI` | SwiftUI screens & components |
+| `HIT` | Hit testing & touch delivery (UIKit) |
+| `RSP` | Responder chain & first responder (UIKit) |
 | `SOL` | Principles: SOLID, DRY, refactoring |
 | `TST` | Testing & test doubles |
 | `MAC` | Macros & SwiftSyntax |
@@ -183,6 +185,30 @@ Progression: `IteratorProtocol` → `Sequence` → `Collection` → `Bidirection
 | UI-04 | A list screen with every state: loading / empty / error / content + retry | 45 | The states that get forgotten 80% of the time |
 | UI-05 | A design system component (`Badge`/`Card`) with `some View`, `@ViewBuilder`, style variants | 45 | Reusable UI primitives instead of copy-paste |
 
+## HIT — Hit testing & touch delivery
+
+| ID | Kata | ⏱ | Why |
+|---|---|---|---|
+| HIT-01 | Trace `hitTest`/`point(inside:)` through a three-level hierarchy and read the call order | 5 | The algorithm behind every tap, seen once instead of guessed |
+| HIT-02 | The four rules that stop a hit test: hidden, alpha, interaction, bounds | 5 | "Visible but untappable" stops being a mystery |
+| HIT-03 | Reimplement `hitTest(_:with:)` from scratch and diff it against UIKit's over a grid of points | 15 | You know the algorithm only once you can write it |
+| HIT-04 | `ExpandedTouchButton`: tap-area insets and a 44×44 minimum via `point(inside:)` | 15 | The most common real fix — a tap target that's too small |
+| HIT-05 | A container that catches touches on a subview hanging outside its bounds | 15 | Badges and close buttons that overhang and stop responding |
+| HIT-06 | `PassthroughView`: an overlay tappable only where its subviews are | 15 | Full-screen overlays that don't block the screen underneath |
+| HIT-07 | A pass-through `UIWindow` for toasts over the whole app | 30 | The production shape: an overlay window that stays out of the way |
+| HIT-08 | From the hit-test view into the chain: `touchesBegan`, `super`, and a recognizer above | 15 | Where hit testing ends and the responder chain begins |
+
+## RSP — Responder chain & first responder
+
+| ID | Kata | ⏱ | Why |
+|---|---|---|---|
+| RSP-01 | `responderChain` via `sequence(first:next:)`, read from three different places | 5 | The chain is not the view hierarchy — see exactly where they part |
+| RSP-02 | Find the current first responder with the nil-target `sendAction` trick | 5 | One line that explains how the whole chain dispatches |
+| RSP-03 | A custom view with `UIKeyInput`, `becomeFirstResponder` and an `inputAccessoryView` | 15 | First responder from the other side: being one, not finding one |
+| RSP-04 | An action sent up the chain, plus a veto in `canPerformAction(_:withSender:)` | 15 | Events without delegates — and the price you pay for them |
+| RSP-05 | An edit menu on a custom view, filtered through `canPerformAction(_:withSender:)` | 15 | `UIEditMenuInteraction`, and why menus need a first responder |
+| RSP-06 | Replace a three-level closure hand-off with routing over the responder chain | 30 | Architecture on the chain — including why the obvious version doesn't dispatch |
+
 ## SOL — Principles & refactoring
 
 | ID | Kata | ⏱ | Why |
@@ -252,10 +278,10 @@ Related: SRV-01, SRV-05, SRV-08, CNC-04, STA-02, STA-03, MAC-12.
 
 # Part 2. Time index
 
-## 5 min — single moves (16)
-`FMT-01` `FMT-02` `FMT-03` `MOD-01` `MOD-02` `MOD-03` `TYP-01` `TYP-02` `GEN-01` `GEN-02` `STD-01` `SEQ-01` `SOL-01` `MAC-01` `MAC-02` `MAC-03`
+## 5 min — single moves (20)
+`FMT-01` `FMT-02` `FMT-03` `MOD-01` `MOD-02` `MOD-03` `TYP-01` `TYP-02` `GEN-01` `GEN-02` `STD-01` `SEQ-01` `HIT-01` `HIT-02` `RSP-01` `RSP-02` `SOL-01` `MAC-01` `MAC-02` `MAC-03`
 
-## 15 min — short links (49)
+## 15 min — short links (57)
 `MOD-04` `MOD-05` `TYP-03` `TYP-04` `TYP-05` `TYP-06` `TYP-07`
 `GEN-03` `GEN-04` `GEN-05` `GEN-06` `GEN-07` `GEN-08` `GEN-09` `GEN-10`
 `STD-02` `STD-03` `STD-04` `STD-05` `STD-06` `STD-07` `STD-08`
@@ -263,17 +289,20 @@ Related: SRV-01, SRV-05, SRV-08, CNC-04, STA-02, STA-03, MAC-12.
 `COD-01` `COD-02` `COD-03` `COD-04` `COD-05`
 `SRV-01` `SRV-02`
 `CNC-01` `CNC-02` `CNC-03` `CNC-04`
+`HIT-03` `HIT-04` `HIT-05` `HIT-06` `HIT-08`
+`RSP-03` `RSP-04` `RSP-05`
 `SOL-02` `SOL-03` `SOL-04`
 `TST-01` `TST-02`
 `MAC-04` `MAC-05` `MAC-06` `MAC-07` `MAC-08` `MAC-09`
 
-## 30 min — combinations (42)
+## 30 min — combinations (44)
 `GEN-11` `SEQ-06` `SEQ-07` `SEQ-08` `SEQ-09` `SEQ-14` `SEQ-16` `SEQ-17` `SEQ-18` `SEQ-20`
 `COD-06`
 `SRV-03` `SRV-04` `SRV-05` `SRV-06` `SRV-07` `SRV-08` `SRV-09` `SRV-10` `SRV-11`
 `CNC-05` `CNC-06` `CNC-07` `CNC-08`
 `STA-01` `STA-02` `STA-03` `STA-04` `STA-05` `STA-06`
 `UI-01` `UI-02` `UI-03`
+`HIT-07` `RSP-06`
 `SOL-05` `SOL-06`
 `TST-03`
 `MAC-10` `MAC-11` `MAC-12` `MAC-13` `MAC-14` `MAC-15`
@@ -308,6 +337,8 @@ Related: SRV-01, SRV-05, SRV-08, CNC-04, STA-02, STA-03, MAC-12.
 | Painless state | `MOD-01` → `STA-02` → `STA-03` → `UI-04` |
 | Metaprogramming | `TYP-02` → `TYP-06` → `GEN-11` → `MAC-08` → `MAC-16` |
 | Swift 6 concurrency | `CNC-01` → `CNC-02` → `CNC-03` → `CNC-05` → `CNC-08` → `SEQ-19` |
+| A touch, from pixel to handler | `HIT-01` → `HIT-02` → `HIT-03` → `HIT-04` → `HIT-06` → `HIT-08` → `RSP-01` → `RSP-04` |
+| Overlays that behave | `HIT-06` → `HIT-05` → `HIT-07` → `RSP-06` |
 
 ## Log template
 

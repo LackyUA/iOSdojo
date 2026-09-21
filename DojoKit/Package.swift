@@ -21,6 +21,7 @@ let groups: [(folder: String, katas: [String])] = [
         + katas("GEN", 11...11) + katas("SEQ", 6...21) + katas("SOL", 1...9)),
     ("DojoNetworking", katas("COD", 1...6) + katas("SRV", 1...11) + katas("CNC", 1...8)),
     ("DojoUI", katas("STA", 1...11) + katas("UI", 1...5)),
+    ("DojoUIKit", katas("HIT", 1...8) + katas("RSP", 1...6)),
 ]
 
 // Testing katas are test targets themselves.
